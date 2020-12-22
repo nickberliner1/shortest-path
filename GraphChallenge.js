@@ -36,7 +36,8 @@ function GraphChallenge(strArr) {
             
             
             let path = paths.join().replace(/\|/g, "").split(",");
-            
+            // Regular Expression to turn "[A | B | 1]" into [AB1]
+
             if ( currentNode == path[i].charAt(0) || currentNode == path[i].charAt(1) ) {
                 let nextNode = (currentNode == path[i].charAt(0)) ? path[i].charAt(1) : path[i].charAt(0);
                 
